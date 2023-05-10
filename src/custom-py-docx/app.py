@@ -122,7 +122,6 @@ class CreateDocx:
                 else:
                     colors = [f"rgb({random.randint(0, 255)}, {random.randint(0, 255)}, {random.randint(0, 255)})"
                             for _ in range(num_bars)]
-                
                 fig.add_trace(
                     go.Bar(x=x_values, y=y_values, marker=dict(color=colors))
                 )
